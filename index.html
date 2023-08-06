@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1,user-scalable=no"
+    />
+    <title>
+      Feature widget in a side panel | Sample | ArcGIS Maps SDK for JavaScript
+      4.27
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.27/esri/themes/dark/main.css"
+    />
+    <script src="https://js.arcgis.com/4.27/"></script>
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/1.3.0/calcite.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.arcgis.com/calcite-components/1.3.0/calcite.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="calcite-mode-dark">
+    <div id="left-panel">
+      <div id="feature-node" class="esri-widget">
+        <!-- <calcite-label id="pointsLabel" alignment="center" scale="l">
+        </calcite-label> -->
+      </div>
+
+      <div id="right-panel">
+        <div id="querySelector">
+          <calcite-label id="queries-lab" alignment="center" scale="l">
+            Click below to Query Crime Data
+          </calcite-label>
+          <calcite-label id="arr-bor" alignment="center" scale="m">
+            Arrest Borough
+          </calcite-label>
+          <calcite-combobox id="arrest-borough">
+            <!-- dynamically populated -->
+          </calcite-combobox>
+          <calcite-label id="arr-pre" alignment="center" scale="m">
+            Arrest Precinct
+          </calcite-label>
+          <calcite-combobox id="arrest-precint">
+            <!-- dynamically populated -->
+          </calcite-combobox>
+          <calcite-label id="arr-date" alignment="center" scale="m">
+            Arrest Date
+          </calcite-label>
+          <calcite-combobox id="crimeDataCombobox">
+            <!-- dynamically populated -->
+          </calcite-combobox>
+          <!-- <calcite-label id="age-group" alignment="center" scale="m">
+            Age Group
+          </calcite-label>
+          <calcite-combobox id="crimeDataCombobox">
+     
+          </calcite-combobox>
+          <calcite-label id="age-group" alignment="center" scale="m">
+            Age Group
+          </calcite-label>
+          <calcite-combobox id="crimeDataCombobox">
+      
+          </calcite-combobox> -->
+        </div>
+      </div>
+      <div id="bottom-right-panel">
+        <div id="sketchTitle">
+          <calcite-label id="queryLabel" alignment="center" scale="l">
+            Query Results:
+          </calcite-label>
+        </div>
+        <div id="ticketTitle">
+          <calcite-list id="ticketQueries">
+            <!-- dynamically populate -->
+          </calcite-list>
+        </div>
+      </div>
+    </div>
+    <calcite-button id="badButton" appearance="solid" kind="danger"
+      >Bad Boys</calcite-button
+    >
+    <div id="viewDiv"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

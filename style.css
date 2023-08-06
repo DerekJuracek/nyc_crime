@@ -1,0 +1,101 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+#viewDiv {
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 60%;
+}
+
+#left-panel {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#right-panel {
+  position: fixed;
+  width: 20%;
+  height: 50%;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+
+#bottom-right-panel {
+  position: fixed;
+  width: 20%;
+  height: 50%; /* changed from 100% to 50% */
+  bottom: 0; /* added to position at the bottom */
+  right: 0;
+  background-color: black;
+}
+
+#feature-node {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#feature-node,
+#sketchDiv {
+  flex: 1;
+  padding-left: 5px;
+  overflow: scroll;
+  background-color: black;
+}
+
+#queryLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#pointsLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: white;
+}
+
+#queryDiv2 {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+}
+
+calcite-label {
+  color: white;
+}
+
+#sketchTitle,
+#ticketTitle {
+  position: sticky;
+  top: 0;
+  z-index: 1; /* To make sure it stays on top */
+}
+
+#queries-lab {
+  font: 700;
+  font-size: 26px;
+  color: white;
+}
+
+calcite-label::slotted(*) {
+  color: white;
+}
